@@ -1,11 +1,414 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Adopt a Wetland</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adopta un Humedal: proyecto de ciencia ciudadana para conocer, investigar y proteger los humedales del Principado de Asturias.">
+  <meta name="theme-color" content="#123f3a">
+  <title>Adopta un Humedal | Conoce · Investiga · Protege</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Adopt a Wetland</h1>
-    <p>Bienvenidos a nuestro proyecto de divulgación científica.</p>
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Adopta un Humedal, inicio">
+        <span class="brand-mark">◒</span>
+        <span>
+          <strong>ADOPTA UN HUMEDAL</strong>
+          <small>CONOCE · INVESTIGA · PROTEGE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#proyecto">El proyecto</a>
+        <a href="#humedales">Humedales</a>
+        <a href="#edna">ADN ambiental</a>
+        <a href="#participa">Participa</a>
+        <a href="#resultados">Resultados</a>
+        <button class="lang-toggle" type="button" aria-label="Cambiar idioma">EN</button>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">CIENCIA CIUDADANA · ASTURIAS</p>
+        <h1>Los humedales<br><em>nos cuentan historias.</em></h1>
+        <p class="hero-text">
+          Descubrimos la biodiversidad de los humedales del Principado de Asturias, estudiamos sus amenazas
+          y trabajamos juntos para protegerlos.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#humedales">Explora los humedales</a>
+          <a class="button button-ghost" href="#participa">Quiero participar</a>
+        </div>
+      </div>
+      <div class="scroll-hint">↓ Descubre el proyecto</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat"><strong>7</strong><span>humedales<br>estudiados</span></div>
+        <div class="stat"><strong>35</strong><span>puntos de<br>muestreo</span></div>
+        <div class="stat"><strong>580+</strong><span>participantes<br>previstos</span></div>
+        <div class="stat"><strong>eDNA</strong><span>ciencia para<br>conocer la biodiversidad</span></div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="proyecto">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow dark">¿QUÉ ESTAMOS HACIENDO?</p>
+          <h2>Conocer para<br><em>proteger.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p class="lead">
+            Los humedales son ecosistemas esenciales. Albergan una enorme biodiversidad,
+            almacenan carbono y ayudan a mantener el equilibrio de nuestro planeta.
+          </p>
+          <p>
+            Pero también están amenazados. En <strong>Adopta un Humedal</strong>, ciudadanía,
+            estudiantes e investigadores trabajamos juntos para conocer su estado y contribuir
+            a su conservación.
+          </p>
+        </div>
+      </div>
+
+      <div class="container cards-3">
+        <article class="feature-card">
+          <span class="card-icon">🔬</span>
+          <h3>Investigamos</h3>
+          <p>Analizamos el agua y su ADN ambiental para descubrir qué especies viven en cada humedal.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">🗑️</span>
+          <h3>Actuamos</h3>
+          <p>Recogemos y clasificamos residuos para conocer sus fuentes y contribuir a mejorar estos ecosistemas.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">🌿</span>
+          <h3>Protegemos</h3>
+          <p>Transformamos los datos científicos en conocimiento útil para identificar amenazas y proponer soluciones.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wetlands-section" id="humedales">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ASTURIAS</p>
+            <h2>Explora nuestros<br><em>humedales.</em></h2>
+          </div>
+          <p>Desde las rías del Cantábrico hasta los humedales de agua dulce, cada ecosistema tiene una historia diferente que contar.</p>
+        </div>
+
+        <div class="wetland-grid">
+          <article class="wetland-card coastal">
+            <span class="wetland-type">🌊 COSTERO · RAMSAR</span>
+            <h3>Ría del Eo</h3>
+            <p>Uno de los grandes humedales costeros del occidente asturiano.</p>
+            <button class="text-button" data-modal="eo">Descubrir →</button>
+          </article>
+          <article class="wetland-card coastal">
+            <span class="wetland-type">🌊 COSTERO · RAMSAR</span>
+            <h3>Ría de Villaviciosa</h3>
+            <p>Un espacio de gran valor ecológico en la costa central de Asturias.</p>
+            <button class="text-button" data-modal="villaviciosa">Descubrir →</button>
+          </article>
+          <article class="wetland-card coastal">
+            <span class="wetland-type">🌊 COSTERO</span>
+            <h3>Ría de Avilés</h3>
+            <p>Un estuario donde naturaleza y actividad humana conviven.</p>
+            <button class="text-button" data-modal="aviles">Descubrir →</button>
+          </article>
+          <article class="wetland-card coastal">
+            <span class="wetland-type">🌊 COSTERO</span>
+            <h3>Ría de Ribadesella</h3>
+            <p>Un sistema estuarino de gran interés para la biodiversidad.</p>
+            <button class="text-button" data-modal="ribadesella">Descubrir →</button>
+          </article>
+          <article class="wetland-card freshwater">
+            <span class="wetland-type">💧 AGUA DULCE</span>
+            <h3>Embalse de La Granda</h3>
+            <p>Un humedal interior incluido en el ámbito de estudio del proyecto.</p>
+            <button class="text-button" data-modal="granda">Descubrir →</button>
+          </article>
+          <article class="wetland-card freshwater">
+            <span class="wetland-type">💧 AGUA DULCE</span>
+            <h3>Embalse de Trasona</h3>
+            <p>Un ecosistema de agua dulce con biodiversidad y retos ambientales propios.</p>
+            <button class="text-button" data-modal="trasona">Descubrir →</button>
+          </article>
+          <article class="wetland-card freshwater">
+            <span class="wetland-type">💧 AGUA DULCE</span>
+            <h3>La Furta</h3>
+            <p>Un humedal interior donde investigar biodiversidad y estado ambiental.</p>
+            <button class="text-button" data-modal="furta">Descubrir →</button>
+          </article>
+        </div>
+
+        <div class="map-placeholder">
+          <div class="map-copy">
+            <span class="map-pin">⌖</span>
+            <h3>Próximamente: mapa interactivo</h3>
+            <p>Podrás explorar los puntos de muestreo y descubrir qué estamos encontrando en cada humedal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section edna-section" id="edna">
+      <div class="container two-col edna-layout">
+        <div class="edna-text">
+          <p class="eyebrow">LA CIENCIA DETRÁS DEL PROYECTO</p>
+          <h2>Una muestra de agua puede contarnos la historia de <em>todo un ecosistema.</em></h2>
+          <p>
+            Todos los seres vivos dejan pequeñas trazas de ADN en el ambiente. Mediante el
+            <strong>ADN ambiental (eDNA)</strong> podemos detectar señales de organismos que viven
+            en un humedal sin necesidad de capturarlos.
+          </p>
+          <a class="button button-light" href="#participa">Participa en la ciencia</a>
+        </div>
+
+        <div class="process">
+          <div class="process-step"><span>01</span><div><h3>Muestreamos</h3><p>Recogemos agua directamente del humedal.</p></div></div>
+          <div class="process-step"><span>02</span><div><h3>Extraemos</h3><p>Recuperamos el ADN presente en las muestras.</p></div></div>
+          <div class="process-step"><span>03</span><div><h3>Analizamos</h3><p>Aplicamos PCR y secuenciación masiva.</p></div></div>
+          <div class="process-step"><span>04</span><div><h3>Descubrimos</h3><p>Identificamos las especies presentes.</p></div></div>
+          <div class="process-step"><span>05</span><div><h3>Protegemos</h3><p>Usamos el conocimiento para detectar amenazas.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section participate-section" id="participa">
+      <div class="container">
+        <div class="center-heading">
+          <p class="eyebrow dark">CIENCIA CIUDADANA</p>
+          <h2>Tú también puedes <em>participar.</em></h2>
+          <p>No necesitas ser científico. Hay muchas formas de contribuir.</p>
+        </div>
+
+        <div class="participate-grid">
+          <article><span>🥾</span><h3>Muestrea</h3><p>Participa en la recogida de datos y muestras de agua.</p></article>
+          <article><span>📱</span><h3>Observa</h3><p>Ayuda a identificar plantas y animales mediante fotografías.</p></article>
+          <article><span>🗑️</span><h3>Limpia</h3><p>Colabora en la retirada y clasificación de residuos.</p></article>
+          <article><span>🛰️</span><h3>Explora</h3><p>Analiza datos ambientales obtenidos mediante satélites.</p></article>
+          <article><span>🧑‍🏫</span><h3>Aprende</h3><p>Participa en talleres y actividades educativas.</p></article>
+          <article><span>🔬</span><h3>Descubre</h3><p>Ayúdanos a conocer la biodiversidad de nuestros humedales.</p></article>
+        </div>
+
+        <div class="cta-box">
+          <div><h3>¿Quieres adoptar un humedal?</h3><p>Únete al proyecto y descubre cómo puedes participar.</p></div>
+          <a class="button button-primary" href="mailto:contacto@adoptaunhumedal.org">Quiero participar →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blue-carbon-section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">CARBONO AZUL</p>
+          <h2>Humedales que ayudan a <em>nuestro planeta.</em></h2>
+        </div>
+        <div>
+          <p class="lead">
+            Los humedales pueden actuar como sumideros de carbono, almacenando CO₂ en la vegetación y los sedimentos.
+          </p>
+          <p>
+            Conocer su biodiversidad y estado ambiental es un primer paso para comprender su papel frente al cambio climático
+            y diseñar estrategias de conservación y restauración.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section basurarte-section">
+      <div class="container basurarte-grid">
+        <div class="basurarte-art">
+          <div class="art-circle">3R</div>
+          <div class="art-label">BASURARTE</div>
+        </div>
+        <div>
+          <p class="eyebrow dark">DE RESIDUO A RECURSO</p>
+          <h2>La basura también<br>puede contar una <em>historia.</em></h2>
+          <p class="lead">Recogemos la basura. La clasificamos. Investigamos de dónde procede. Y le damos una segunda vida.</p>
+          <p>Una iniciativa que conecta conservación, ciencia ciudadana y creatividad a través de las tres R:</p>
+          <div class="three-r"><span>Reducir</span><span>Reutilizar</span><span>Reciclar</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results-section" id="resultados">
+      <div class="container">
+        <div class="center-heading light-heading">
+          <p class="eyebrow">RESULTADOS</p>
+          <h2>¿Qué estamos <em>descubriendo?</em></h2>
+          <p>Esta sección crecerá a medida que avance el proyecto.</p>
+        </div>
+        <div class="results-grid">
+          <div><strong>🧬</strong><span>Especies detectadas</span></div>
+          <div><strong>🌿</strong><span>Biodiversidad</span></div>
+          <div><strong>🦞</strong><span>Especies invasoras</span></div>
+          <div><strong>🧪</strong><span>Contaminantes</span></div>
+          <div><strong>🗑️</strong><span>Residuos encontrados</span></div>
+          <div><strong>🌎</strong><span>Carbono almacenado</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news-section">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">ACTUALIDAD</p><h2>Seguimos <em>en movimiento.</em></h2></div>
+          <p>Próximamente podrás encontrar aquí noticias, actividades, vídeos y recursos del proyecto.</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card"><span>📅</span><h3>Actividades y eventos</h3><p>Consulta las próximas actividades de ciencia ciudadana.</p></article>
+          <article class="news-card"><span>🎥</span><h3>Vídeos divulgativos</h3><p>Descubre la ciencia que hay detrás de nuestros humedales.</p></article>
+          <article class="news-card"><span>📚</span><h3>Recursos educativos</h3><p>Materiales para aprender, enseñar y participar.</p></article>
+        </div>
+      </div>
+    </section>
+  
+<!-- VIDEO_AND_PARTICIPATION_SECTION -->
+<section class="video-section" id="video">
+  <div class="section-heading">
+    <span class="eyebrow">CONOCE EL PROYECTO</span>
+    <h2>¿Qué es Adopta un Humedal?</h2>
+    <p>
+      Descubre cómo la ciudadanía puede participar en el estudio de la biodiversidad,
+      la calidad ambiental y las amenazas de los humedales del Principado de Asturias.
+    </p>
+  </div>
+
+  <div class="video-card">
+    <div class="video-placeholder">
+      <div class="play-icon">▶</div>
+      <span>VÍDEO DE PRESENTACIÓN DEL PROYECTO</span>
+      <small>Aquí podrás insertar el vídeo explicativo de Adopta un Humedal</small>
+    </div>
+    <div class="video-info">
+      <h3>Una investigación en la que tú también puedes participar</h3>
+      <p>
+        En este vídeo explicaremos qué son los humedales, por qué son importantes,
+        cómo utilizamos el ADN ambiental para estudiar su biodiversidad y qué puede
+        hacer cada participante para contribuir a su conservación.
+      </p>
+      <button class="secondary-button" type="button">Ver vídeo próximamente</button>
+    </div>
+  </div>
+</section>
+
+<section class="how-to-section" id="como-participar">
+  <div class="section-heading">
+    <span class="eyebrow">GUÍA DE PARTICIPACIÓN</span>
+    <h2>¿Cómo participar?</h2>
+    <p>
+      Sigue estos pasos para convertirte en parte del proyecto y contribuir al conocimiento
+      y conservación de los humedales.
+    </p>
+  </div>
+
+  <div class="steps-grid">
+    <article class="step-card">
+      <span class="step-number">01</span>
+      <h3>Elige un humedal</h3>
+      <p>Selecciona uno de los humedales del proyecto y consulta la información disponible sobre el lugar.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">02</span>
+      <h3>Únete a un equipo</h3>
+      <p>Participa con tu centro educativo, asociación, grupo o de forma individual.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">03</span>
+      <h3>Completa la formación</h3>
+      <p>Aprende cómo realizar las observaciones, tomar datos y recoger muestras de forma segura.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">04</span>
+      <h3>Prepara tu kit</h3>
+      <p>Reúne el material necesario para el muestreo y comprueba que todo está correctamente preparado.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">05</span>
+      <h3>Visita el humedal</h3>
+      <p>Desplázate al punto de muestreo y registra la fecha, hora, ubicación y condiciones ambientales.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">06</span>
+      <h3>Observa y registra</h3>
+      <p>Identifica las especies visibles, mide los parámetros ambientales y fotografía el entorno.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">07</span>
+      <h3>Recoge agua para ADN ambiental</h3>
+      <p>Toma las muestras siguiendo las instrucciones del proyecto y conserva correctamente el material.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">08</span>
+      <h3>Retira y clasifica la basura</h3>
+      <p>Recoge los residuos del entorno siguiendo las recomendaciones de seguridad y registra su tipología.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">09</span>
+      <h3>Sube tus datos</h3>
+      <p>Introduce la información y las fotografías en el formulario online del proyecto para que puedan ser analizadas.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-number">10</span>
+      <h3>Descubre los resultados</h3>
+      <p>Participa en el análisis de los datos y descubre qué especies viven en cada humedal y cuáles son sus principales amenazas.</p>
+    </article>
+  </div>
+
+  <div class="alternative-participation">
+    <div>
+      <span class="eyebrow">PARTICIPACIÓN ACCESIBLE</span>
+      <h3>¿No puedes desplazarte al humedal?</h3>
+      <p>
+        También puedes participar desde cualquier lugar utilizando datos satelitales.
+        Explora la evolución ambiental de los humedales del Principado de Asturias y
+        contribuye al análisis de sus cambios a lo largo del tiempo.
+      </p>
+    </div>
+    <a href="#participa" class="primary-button">Quiero participar</a>
+  </div>
+</section>
+
+</main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark">◒</span><span><strong>ADOPTA UN HUMEDAL</strong><small>CONOCE · INVESTIGA · PROTEGE</small></span></div>
+        <p>Un proyecto de ciencia ciudadana para el estudio y conservación de los humedales del Principado de Asturias.</p>
+      </div>
+      <div><h4>Explora</h4><a href="#proyecto">El proyecto</a><a href="#humedales">Humedales</a><a href="#edna">ADN ambiental</a><a href="#participa">Participa</a></div>
+      <div><h4>Contacto</h4><a href="mailto:contacto@adoptaunhumedal.org">Escríbenos</a><a href="#resultados">Resultados</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Adopta un Humedal</span><span>Proyecto de divulgación y ciencia ciudadana</span></div>
+  </footer>
+
+  <div class="modal" id="wetland-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Cerrar">×</button>
+      <p class="eyebrow dark">HUMEDAL EN ESTUDIO</p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-note">Próximamente añadiremos aquí fotografías, datos de biodiversidad, resultados de eDNA y actividades de cada humedal.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
